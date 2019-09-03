@@ -1,2 +1,2 @@
 # zero-width-char-encoding
-Encoding or decoding text using zero-width character
+Encoding or decoding a given text using zero-width character
