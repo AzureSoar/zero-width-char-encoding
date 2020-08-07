@@ -6,7 +6,7 @@
             <p slot="title">Encoding</p>
             <Input v-model="inputText" type="textarea" :autosize="true" placeholder="Enter something..." />
         </Card>
-        <Button type="primary"  icon="ios-power" @click="handleEncoding">
+        <Button type="primary"  icon="ios-color-wand-outline" @click="handleEncoding">
             Cast an invisibility spell!
         </Button>
         <Card :bordered="false">
@@ -19,7 +19,7 @@
             <p slot="title">Decoding</p>
             <Input v-model="encodedText" type="textarea" :autosize="true" placeholder="Enter something..." />
         </Card>
-        <Button type="primary"  icon="ios-power" @click="handleDecoding">
+        <Button type="primary"  icon="logo-octocat" @click="handleDecoding">
             Get the secret!
         </Button>
         <Card :bordered="false">
@@ -62,7 +62,7 @@ export default {
         this.inputText = result
         // console.log('res',res.join('\u200b')); 
         this.$copyText(result).then(function (e) {
-            alert('success')
+            alert('magic words in your clipboard!')
         //   window.$Message.success('in your clipboard!')
           console.log(e)
         }, function (e) {
